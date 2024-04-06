@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E9F1FA;
+    width: 100%;
+}
+header{
+    background: #00ABE4; 
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1;
+}
+header h1{
+    color: #E9F1FA;
+    padding-top: 25px;
+    padding-left: 80px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header div{
+    padding: 20px;
+    padding-right: 120px;
+
+}
+header button{
+    background-color: #e9f1fa;
+    color: #00abe4;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 12px 13px;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    display: inline-block;
+    box-shadow: inset -17px 15px 35px -32px rgba(0,18,24,0.5);
+}
+header button:hover{
+    background-color: #ebf2fb;
+    transform: scale(0.95);
+}
+header button:active{
+    transform: scale(0.95);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    padding-top: 115px;
+    width: 90%;
+    margin: auto;
+}
+.container h1{
+    font-size: 1em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    color:#00abe4 ;
+}
+.user-1{
+    width: 30%;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: inset -3px 5px 23px 6px rgba(0,170.99999999999983,228,0.5);
+    border: 8px solid rgb(239, 247, 255);
+    border-radius: 20px;
+}
+#localVideo{
+    height: 100%;
+    width: auto;
+}
+#videos{
+    padding-left: 20px;
+    width: 70%;
+    overflow: scroll;
+}
+#videos::-webkit-scrollbar {
+    display: none;
+}
+#remoteVideo1,
+#remoteVideo2,
+#remoteVideo3,
+#remoteVideo4,
+#remoteVideo5,
+#remoteVideo6,
+#remoteVideo7
+{
+    width: 30%;
+    height: 48.5%;
+    box-shadow: inset -3px 5px 23px 6px rgba(0,170.99999999999983,228,0.5);
+    border: 4px solid rgb(239, 247, 255);
+    border-radius: 20px;
+}
+@media (max-width:768px){
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    header{
+        display: flex;
+        flex-direction: row;
+    }
+    header span{
+        display: none;
+    }
+    header h1{
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    header div{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        padding-top: 13px;
+        margin-right: 10px;
+    }
+    header button{
+        background-color: #e9f1fa;
+    color: #00abe4;
+    font-family: Trebuchet MS;
+    font-size: 18px;
+    font-weight: 800;
+    font-style: normal;
+    text-decoration: none;
+    padding: 10px 10px;
+    height: 60px;
+    border: 3px solid #ffffff;
+    border-radius: 12px;
+    display: inline-block;
+    margin-left:10px ;
+    }
+    .container{
+        width: 93%;
+        height: 100vh;
+        margin: auto;
+    }
+    .user-1{
+        width: 45%;
+        height: 200px;
+        overflow: hidden;
+        box-shadow: inset -3px 5px 23px 6px rgba(0,170.99999999999983,228,0.5);
+        border: 3px solid rgb(239, 247, 255);
+        border-radius: 20px;
+    }
+    #localVideo{
+        height: 175px;
+        width: 100%;
+        border-radius: 20px;
+    }
+    #videos{
+        height: 100%;
+        padding: 0;
+    }
+    #remoteVideo1,
+    #remoteVideo2,
+    #remoteVideo3,
+    #remoteVideo4,
+    #remoteVideo5,
+    #remoteVideo6,
+    #remoteVideo7{
+        width: 45%;
+        height: 30vh;
+    }
+   
+
+}
+
+
+
